@@ -71,4 +71,8 @@
   .decorative-images {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .slogan {
+    font-size: 4.8rem;
+  }
 }
