@@ -1,0 +1,74 @@
+@import url("root.css");
+
+/***************************/
+/* TABLET Breakpoint 768px */
+/***************************/
+
+@media(max-width:768px) {
+  nav {
+    position: relative;
+  }
+
+  .navbar {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    gap: 3.2rem;
+    background-color: var(--soft-red);
+    padding: 2.4rem;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+  }
+}
+
+/***************************************/
+/* after this point it becomes crumped */
+/* 668px *******************************/
+/***************************************/
+
+@media (max-width:668px) {
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2-cols.column-reverse img {
+    grid-row: 1;
+  }
+
+  .section-img {
+    grid-row: 1;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+  }
+
+  .testimonial {
+    grid-column: 1;
+  }
+
+  .testimonial:nth-of-type(1) {
+    grid-row: 2;
+  }
+
+  .testimonial:nth-of-type(2) {
+    grid-row: 3;
+  }
+
+  .testimonial:nth-of-type(3) {
+    grid-row: 4;
+  }
+
+  .decorative-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
