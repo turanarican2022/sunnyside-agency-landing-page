@@ -73,6 +73,10 @@
   }
 
   .slogan {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
+  }
+
+  .testimonials-grid h3 {
+    font-size: 2.4rem;
   }
 }
